@@ -1,0 +1,9 @@
+*{margin:0;padding:30px 40px;box-sizing:border-box;font-family:Arial, sans-serif;}
+h1,h2{margin-bottom:24px;}
+p,label{font-size:18px;margin-bottom:16px;}
+button{margin-top:20px;padding:8px 16px;font-size:16px;cursor:pointer;}
+#estimate-slider{width:400px;margin:10px 0;}
+.hidden{display:none;}
+.bag-img-group{display:flex;gap:40px;margin:30px 0;}
+.bag-img{width:220px;height:auto;border:1px solid #aaa;}
+.bag-card{text-align:center;}

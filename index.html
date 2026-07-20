@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Edwards Experiment 1965</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="main-box">
+    <section id="intro-page" class="page">
+        <h1>Probability Estimation Task</h1>
+        <p>Two bags are available: one contains 70% red chips, the other contains 70% blue chips. We will flip a coin to randomly select one target bag. You will draw chips from this bag with replacement, then estimate the chance that the selected bag is the 70% red one.</p>
+        <div class="bag-img-group">
+            <div class="bag-card">
+                <img src="bag-red.jpg" alt="70% red chip bag" class="bag-img">
+                <p>Bag A: 70% Red Chips</p>
+            </div>
+            <div class="bag-card">
+                <img src="bag-blue.jpg" alt="70% blue chip bag" class="bag-img">
+                <p>Bag B: 70% Blue Chips</p>
+            </div>
+        </div>
+        <p>The experiment runs for 12 drawing rounds. No statistics knowledge required.</p>
+        <button id="start-btn">Start Experiment</button>
+    </section>
+
+    <section id="trial-page" class="page hidden">
+        <h2>Trial <span id="trial-num">1</span> / 12</h2>
+        <div class="chip-display">
+            <p>Drawn chip color: <span id="chip-color"></span></p>
+        </div>
+        <div class="estimate-area">
+            <label>Estimated probability that the target bag is mostly red (0-100%):</label>
+            <input type="range" min="0" max="100" id="estimate-slider">
+            <span id="estimate-value">50</span>%
+        </div>
+        <button id="submit-trial">Submit Estimate & Draw Next Chip</button>
+    </section>
+
+    <section id="end-page" class="page hidden">
+        <h2>Task Completed</h2>
+        <p>Thank you for participating. All your responses have been saved automatically.</p>
+    </section>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
