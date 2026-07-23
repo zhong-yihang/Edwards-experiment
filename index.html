@@ -27,7 +27,12 @@
     <section id="trial-page" class="page hidden">
         <h2>Trial <span id="trial-num">1</span> / 12</h2>
         <div class="chip-display">
-            <p>Drawn chip color: <span id="chip-color"></span></p>
+            <p>Drawn chip color:</p>
+        </div>
+        <!-- Move bag & animation container below text -->
+        <div class="bag-animation-container">
+            <img id="anim-bag" src="D:\HuaweiMoveData\Users\Jimmy\Desktop\Edwards-experiment\bag.jpg" alt="bag">
+            <div id="chip-circle"></div>
         </div>
         <div class="estimate-area">
             <label>Estimated probability that the target bag is mostly red (0-100%):</label>
@@ -39,7 +44,8 @@
 
     <section id="end-page" class="page hidden">
         <h2>Task Completed</h2>
-        <p>Thank you for participating. All your responses have been saved automatically.</p>
+        <p>Your responses have been automatically submitted. You may now close this page and return to Prolific.</p>
+        <p id="submit-status"></p>
     </section>
 </div>
 <script src="script.js"></script>
