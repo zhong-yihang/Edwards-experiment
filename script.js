@@ -4,7 +4,7 @@ let targetBagType = "";
 let trialStartTime = 0;
 let trialRecords = [];
 
-const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbzCZjq_zZmJngj_IK363VYYGw_rHbCRn-d-qX6nLFGb4ZsAZQKDPFaWsqk27_zqF44v4w/exec";
+const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbwrLC_2LTikl69AgYV2Rk2QT1--TDU83Q0FsuQmmNFPRa4Ke6H5OB_L6i8FlMCR1EzQ6g/exec";
 
 function getParticipantId() {
   const urlParams = new URLSearchParams(window.location.search);
@@ -90,16 +90,13 @@ async function sendDataToSheet(){
     try{
         const fetchResult = await fetch(WEB_APP_URL, {
             method: "POST",
+            mode: "no-cors",
             headers: {
-                "Content-Type": "application/json",
+                "Content-Type": "application/json"
             },
             body: JSON.stringify(payload)
         });
-        if(fetchResult.ok){
-            statusText.textContent = "Submission successful. Thank you!";
-        }else{
-            statusText.textContent = "Submission failed. Please refresh and retry.";
-        }
+        statusText.textContent = "Submission successful. Thank you!";
     }catch(error){
         statusText.textContent = "Submission failed. Please refresh and retry.";
         console.error("Submit Error:", error);
