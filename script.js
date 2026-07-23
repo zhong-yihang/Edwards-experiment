@@ -4,7 +4,7 @@ let targetBagType = "";
 let trialStartTime = 0;
 let trialRecords = [];
 
-const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbx7R3cf5t3U-jyri6N1ZHXXbZSTGPi8PQQHSOGFJIvKq_r9fjOzYcLTZBRDanCE4klV7A/exec";
+const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbzCZjq_zZmJngj_IK363VYYGw_rHbCRn-d-qX6nLFGb4ZsAZQKDPFaWsqk27_zqF44v4w/exec";
 
 function getParticipantId() {
   const urlParams = new URLSearchParams(window.location.search);
